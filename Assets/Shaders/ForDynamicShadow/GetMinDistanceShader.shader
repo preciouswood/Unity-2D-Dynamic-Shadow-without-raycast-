@@ -46,7 +46,6 @@
             {
 				float4 color = tex2D(_MainTex, uv);
 
-				float nearPixelOffset = uv.x;
 
 				float4 nearColor = tex2D(_MainTex, uv - float2(_TextureSizeCountDown, 0) );
 				float4 result = min(color, nearColor);
