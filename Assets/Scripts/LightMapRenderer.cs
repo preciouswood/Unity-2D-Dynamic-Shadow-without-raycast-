@@ -25,7 +25,7 @@ public class LightMapRenderer : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (renderTextureSize != 256 || renderTextureSize != 512 || renderTextureSize != 1024 || renderTextureSize != 2048)
+        if (renderTextureSize != 256 && renderTextureSize != 512 && renderTextureSize != 1024 && renderTextureSize != 2048)
         {
             if (renderTextureSize < 512)
                 renderTextureSize = 256;
