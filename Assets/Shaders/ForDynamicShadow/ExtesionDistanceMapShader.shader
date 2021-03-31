@@ -49,7 +49,7 @@
 				float2 newCoords = float2(i.uv.x, v0);
 
 
-				half horizontal = tex2D(_MainTex, newCoords).r < 0。9 ? length(newCoords - 0.5) : 1;
+				half horizontal = tex2D(_MainTex, newCoords).r < 0.9 ? length(newCoords - 0.5) : 1;
 				half vertical = tex2D(_MainTex, newCoords.yx).r < 0.9 ? length(newCoords - 0.5) : 1;
 				return half4(horizontal, vertical, 0, 1);
 
